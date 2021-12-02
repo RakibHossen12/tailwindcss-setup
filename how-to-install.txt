@@ -1,0 +1,30 @@
+how to install tailwind using cli - 
+1) check your node version tailwind need node => 10
+
+2) do - npm init -y to init the project and -y for yes
+
+3) do npm i -D tailwindcss to install tailwindcss
+
+4) npx tailwindcss init this will create a tailwind.config.js
+
+5) create a src and output dir or you can just put them at any place
+
+6) go to src or where you want to create the tailwind.css file but be sure not to put this at the same dir as the output tailwind.css so it's better to create that in src/
+
+7) put this line in tailwind.css (src folder) - 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+8) create a var named build under script var in your package.json and set it to = "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
+
+(note that you need to pt your src/ tailwind path at ./src/tailwind.css and output file path in ./output/tailwind.css)
+
+9) link your output tailwind.css file in my case it is ./output/tailwind.css
+
+10) If you did everything right with no errors then you are good to go just run "npm run build"
+
+****You need to run all commands. This folder only has the index.html file****
+
+		- thanks By Rakib Hossen
